@@ -125,7 +125,7 @@ Six models · **identical EfficientNet-B0 architecture** · only the preprocessi
 | E — Full Framework | `0.7490` | `0.9346` | `0.3012` | `0.0114` | `0.0070` |
 | **🏆 E — MelBoost 3.0** | **`0.7327`** | **`0.9324`** | **`0.5301`** | **`0.1154`** | **`0.0273`** |
 
-> **⚠️ Reading these numbers:** Model A has the highest accuracy but misses ~61 of every 100 melanomas. HAM10000 is ~67% benign nevi, so accuracy rewards getting the *majority* class right. **Melanoma sensitivity is the clinically meaningful metric** — and it's what the deployed model optimises for.
+> **⚠️ Reading these numbers:** Model A has the highest accuracy but misses ~61 of every 100 melanomas. HAM10000 is ~67% benign nevi so accuracy rewards getting the *majority* class right. **Melanoma sensitivity is the clinically meaningful metric** and it's what the deployed model optimises for.
 
 ### 🧪 External Validation — ISIC 2020
 
@@ -224,7 +224,7 @@ python app.py
 
 🌐 Open **http://127.0.0.1:5000**
 
-> **⚠️ Important:** MelanoScan is a *single* Flask application. Keep every file and folder together — the backend and frontend are not separate projects and must not be split into separate directories.
+> **⚠️ Important:** MelanoScan is a *single* Flask application. Keep every file and folder together (the backend and frontend are not separate projects and must not be split into separate directories).
 
 ### 🔬 Reproducing the Research
 
@@ -264,7 +264,7 @@ Stated plainly, because they matter for how these results should be read.
 ## 🔮 Future Work
 
 - 🗃️ Incorporate **ISIC Challenge** and **Fitzpatrick17k / DDI** datasets to add real images and cover skin tone
-- 📐 Add **FPR-based fairness (Equalized Odds)** alongside EOD; test architectures beyond EfficientNet-B0
+- 📐 Add **FPR-based fairness (Equalized Odds)** alongside EOD & test architectures beyond EfficientNet-B0
 - 🩺 Run a structured **usability study** with practising dermatologists on real patient data
 - 📋 Incorporate structured **clinical metadata** (patient history, ABCDE criteria) for multi-modal prediction
 - 🔍 Add **explainability tooling** (Grad-CAM, saliency mapping) so clinicians can verify model focus
@@ -274,6 +274,7 @@ Stated plainly, because they matter for how these results should be read.
 ## 🙏 Acknowledgements
 
 **Supervisor** · Dr. Kulothunkan Palasundram
+
 **Second Marker** · Ms. Hema Latha Krishna Nair
 
 <div align="center">
